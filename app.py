@@ -4,7 +4,7 @@ from keys import api_key
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def index():
     return render_template('home.html')
 
